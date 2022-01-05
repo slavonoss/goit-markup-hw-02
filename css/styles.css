@@ -1,6 +1,20 @@
+:root {
+  --text-element-color: #757575;
+  --body-background-color: #fff;
+  --item-detail-item-color:#212121;
+  --item-details-category-color: #757575;
+  --filter-button-color: #F5F4FA;
+  --filteer-button-active-color: aqua;
+  --liting-color: chartreuse;
+ 
+}
+
 body {
   margin: 0;
   font-family: Roboto, 'sans-serif';
+  background-color: var(--body-background-color);
+  color: var(--item-detail-item-color);
+
 }
 
 .nav {
@@ -16,5 +30,72 @@ body {
   font-family: inherit;
   font-size: 14 px;
   line-height: 1.7;
-  color: #757575;
+  color: var(--text-element-color);
+}
+
+.main-container {
+  width: 64%;
+  margin: auto;
+}
+
+.filter {
+  display: flex;
+  justify-content:safe;
+  padding-left: 450px;
+}
+
+.filter-button {
+  background-color: var(--filter-button-color);
+  cursor: pointer;
+}
+
+.filter-button:hover {
+  background-color: var(--filteer-button-active-color);
+  cursor: pointer;
+}
+
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  width: 370px;
+  height: 404px;
+  margin: 8px;
+}
+
+.item-image {
+  width: 370px;
+  height: 294px;
+}
+
+.item-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.item-details-title
+{
+  font-size: 18px;
+  line-height: 2;
+  font-weight: bold;
+  padding: 10px 8px;
+  margin: 0;
+}
+.item-details-category
+{
+  padding:  0 0 0 10px;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.875;
+  color: var(--item-details-category-color);
+  margin: 0;
+}
+.activ-alement:hover, active-alement:active
+{
+color: var(--liting-color);
 }
