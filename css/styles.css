@@ -97,5 +97,5 @@ body {
 }
 .activ-alement:hover, active-alement:active
 {
-color: var(--liting-color);
+color: var(--liting-color);  
 }
