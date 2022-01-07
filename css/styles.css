@@ -40,7 +40,7 @@ body {
 
 .filter {
   display: flex;
-  justify-content:safe;
+  justify-content:space-around;
   padding-left: 450px;
 }
 
