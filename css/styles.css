@@ -2,28 +2,152 @@
   --text-element-color: #757575;
   --body-background-color: #fff;
   --item-detail-item-color:#212121;
-  --item-details-category-color: #757575;
   --filter-button-color: #F5F4FA;
-  --filteer-button-active-color: aqua;
-  --liting-color: chartreuse;
+  --liting-color: #2196F3;
+  --background-color-second: #2F303A;
+  
+
  
 }
 
 body {
   margin: 0;
+  padding: 0;
+  width: 1600px;
+  height: 100%;
   font-family: Roboto, 'sans-serif';
   background-color: var(--body-background-color);
   color: var(--item-detail-item-color);
 
 }
-
+.verhnya-liniya
+{
+  
+  width: 1600px;
+  height: 80px;
+  background-color: var(--body-background-color);
+}
+.header-item-group {
+  
+  color: var(--item-detail-item-color);
+  font-size: 14px;
+  line-height: 1.1428;
+}
+.web
+{
+  font-family: Releway;
+  color:var(--liting-color);
+  font-size: 26px;
+  line-height: 1.1738;
+}
+.studio
+{
+  
+  font-family: Releway;
+  color:var(--item-detail-item-color);
+  font-size: 26px;
+  line-height: 1.1738;
+}
+.efectivnoe-reshenie
+{
+  width:  1600px;
+  height: 600px;
+  background-color: var(--background-color-second);
+  margin-top: 100px;
+  
+}
+.efectivnoe-reshenie-text
+{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.3636;
+  color: var(--body-background-color);
+  
+  
+}
+.zagolovok-osobenosti
+{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.1428;
+  color: var(--item-detail-item-color);
+}
+.opisanie-osobenosti
+{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7142;
+  color: var(--text-element-color)
+}
+.zagolovok-razdela
+{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.166666;
+  color: var(--item-detail-item-color);
+  
+}
+.name
+{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.1875;
+  color: var(--item-detail-item-color);
+}
+.position
+{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.1875;
+  color:var(--text-element-color)
+}
+.activ-nav:hover, activ-nav:active
+{
+color: var(--liting-color);  
+}
+.activ-nav
+{
+  color:var(--item-detail-item-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1428;
+}
+.activ-contacts:hover, activ-contacts:active
+{
+  color:var(--liting-color);
+}
+.activ-contacts
+{
+  color: var(--text-element-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1721;
+}
+.studio-podval
+{
+  font-family: Releway;
+  color: var(--body-background-color);
+  font-size: 26px;
+  line-height: 1.1738;
+}
 .nav {
     display: inline-flex;
     justify-content: space-around;
 }
 
-.header-item-group {
-    display: inline-block;
+
+
 }
 
 .text-element {
@@ -47,10 +171,14 @@ body {
 .filter-button {
   background-color: var(--filter-button-color);
   cursor: pointer;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
 }
 
 .filter-button:hover {
-  background-color: var(--filteer-button-active-color);
+  background-color:var(--liting-color);
   cursor: pointer;
 }
 
@@ -83,6 +211,7 @@ body {
   font-size: 18px;
   line-height: 2;
   font-weight: bold;
+  font-style: normal;
   padding: 10px 8px;
   margin: 0;
 }
@@ -91,11 +220,33 @@ body {
   padding:  0 0 0 10px;
   font-size: 16px;
   font-weight: normal;
+  font-style: normal;
   line-height: 1.875;
-  color: var(--item-details-category-color);
+  color: var(--text-element-color);
   margin: 0;
 }
-.activ-alement:hover, active-alement:active
+
+.podval
 {
-color: var(--liting-color);  
+  height: 252px;
+  background-color: var(--background-color-second);
+}
+.adres
+{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7142;
+  color: var(--body-background-color);
+}
+.contacts-podval
+{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7142;
+  color: rgba(255, 255, 255, 0.6);
+
 }
