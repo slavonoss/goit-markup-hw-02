@@ -58,14 +58,35 @@ body {
 }
 .efectivnoe-reshenie-text
 {
+  width: 550px;
+  height: 120px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.3636;
+  text-align: center;
   color: var(--body-background-color);
+  padding: 200px 452px 0px 452px;
+ 
   
   
+}
+.conteiner-zakazat-uslugu
+{
+ 
+}
+.knopka-zakat-usluzu
+{
+  background-color: var(--liting-color);
+  width: 200px;
+  height: 50px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.875;
+  color: var(--body-background-color);
+  margin: 0px 700px 200px 650px;
 }
 .zagolovok-osobenosti
 {
