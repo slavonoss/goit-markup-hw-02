@@ -58,7 +58,7 @@ body {
 }
 .text-effective-solution
 {
-  
+  text-transform: uppercase;
   font-family: Roboto;
   font-style: normal;
   font-weight: 900;
@@ -67,9 +67,6 @@ body {
   text-align: center;
   color: var(--body-background-color);
 
- 
-  
-  
 }
 .conteiner-service-button
 {
@@ -169,6 +166,7 @@ color: var(--liting-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1721;
+  
 }
 .curent{
   color:var(--liting-color);
@@ -214,6 +212,7 @@ color: var(--liting-color);
 
 .filter-button:hover, .filter-button:focus{
   background-color:var(--liting-color);
+  color: var(--body-background-color);
   cursor: pointer;
 }
 
