@@ -9,22 +9,23 @@
 
  
 }
-
+a {
+  text-decoration: none; /* Отменяем подчеркивание у ссылки */
+  }
+ ul {
+  list-style: none;
+ }
 body {
-  margin: 0;
-  padding: 0;
-  width: 1600px;
-  height: 100%;
+  
   font-family: Roboto, 'sans-serif';
   background-color: var(--body-background-color);
   color: var(--item-detail-item-color);
 
 }
-.verhnya-liniya
+.top-line
 {
   
-  width: 1600px;
-  height: 80px;
+
   background-color: var(--body-background-color);
 }
 .header-item-group {
@@ -35,7 +36,7 @@ body {
 }
 .web
 {
-  font-family: Releway;
+  font-family: Raleway;
   color:var(--liting-color);
   font-size: 26px;
   line-height: 1.1738;
@@ -43,23 +44,21 @@ body {
 .studio
 {
   
-  font-family: Releway;
+  font-family: Raleway;
   color:var(--item-detail-item-color);
   font-size: 26px;
   line-height: 1.1738;
 }
-.efectivnoe-reshenie
+.effective-solution
 {
-  width:  1600px;
-  height: 600px;
+  
   background-color: var(--background-color-second);
   margin-top: 100px;
   
 }
-.efectivnoe-reshenie-text
+.text-effective-solution
 {
-  width: 550px;
-  height: 120px;
+  
   font-family: Roboto;
   font-style: normal;
   font-weight: 900;
@@ -67,36 +66,36 @@ body {
   line-height: 1.3636;
   text-align: center;
   color: var(--body-background-color);
-  padding: 200px 452px 0px 452px;
+
  
   
   
 }
-.conteiner-zakazat-uslugu
+.conteiner-service-button
 {
  
 }
-.knopka-zakat-usluzu
+.service-order-button
 {
   background-color: var(--liting-color);
-  width: 200px;
-  height: 50px;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.875;
   color: var(--body-background-color);
-  margin: 0px 700px 200px 650px;
+  cursor: pointer;
+ 
 }
-.zagolovok-osobenosti
+.feature-heading
 {
+  text-transform: uppercase;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.1428;
   color: var(--item-detail-item-color);
 }
-.opisanie-osobenosti
+.feature-description
 {
   font-style: normal;
   font-weight: normal;
@@ -104,7 +103,7 @@ body {
   line-height: 1.7142;
   color: var(--text-element-color)
 }
-.zagolovok-razdela
+.section-heading
 {
   font-style: normal;
   font-weight: bold;
@@ -129,9 +128,13 @@ body {
   line-height: 1.1875;
   color:var(--text-element-color)
 }
-.activ-nav:hover, activ-nav:active
+.activ-nav:hover, activ-nav:active, .activ-nav:focus
 {
 color: var(--liting-color);  
+}
+.adres:hover, .adres:active, .contacts-upper:hover, .contacts-upper:active, .contacts-upper:focus, .adres:focus
+{
+  color:var(--liting-color);
 }
 .activ-nav
 {
@@ -142,7 +145,7 @@ color: var(--liting-color);
   font-size: 14px;
   line-height: 1.1428;
 }
-.activ-contacts:hover, activ-contacts:active
+.activ-contacts:hover, activ-contacts:active, .activ-contacts:focus
 {
   color:var(--liting-color);
 }
@@ -151,9 +154,12 @@ color: var(--liting-color);
   
   background-color: var(--filter-button-color);
 }
-.chelovek
+.hooman
 {
   background-color: var(--body-background-color);
+  width:270px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .activ-contacts
 {
@@ -164,9 +170,12 @@ color: var(--liting-color);
   font-size: 14px;
   line-height: 1.1721;
 }
-.studio-podval
+.curent{
+  color:var(--liting-color);
+}
+.studio-upper
 {
-  font-family: Releway;
+  font-family: Raleway;
   color: var(--body-background-color);
   font-size: 26px;
   line-height: 1.1738;
@@ -174,10 +183,6 @@ color: var(--liting-color);
 .nav {
     display: inline-flex;
     justify-content: space-around;
-}
-
-
-
 }
 
 .text-element {
@@ -195,7 +200,7 @@ color: var(--liting-color);
 .filter {
   display: flex;
   justify-content:space-around;
-  padding-left: 450px;
+  
 }
 
 .filter-button {
@@ -207,7 +212,7 @@ color: var(--liting-color);
   line-height: 1.625;
 }
 
-.filter-button:hover {
+.filter-button:hover, .filter-button:focus{
   background-color:var(--liting-color);
   cursor: pointer;
 }
@@ -221,14 +226,11 @@ color: var(--liting-color);
 .item {
   display: flex;
   flex-direction: column;
-  width: 370px;
-  height: 404px;
-  margin: 8px;
+
 }
 
 .item-image {
-  width: 370px;
-  height: 294px;
+  
 }
 
 .item-details {
@@ -242,12 +244,11 @@ color: var(--liting-color);
   line-height: 2;
   font-weight: bold;
   font-style: normal;
-  padding: 10px 8px;
-  margin: 0;
+  
 }
 .item-details-category
 {
-  padding:  0 0 0 10px;
+  
   font-size: 16px;
   font-weight: normal;
   font-style: normal;
@@ -256,9 +257,9 @@ color: var(--liting-color);
   margin: 0;
 }
 
-.podval
+.upper-line
 {
-  height: 252px;
+  
   background-color: var(--background-color-second);
 }
 .adres
@@ -270,7 +271,7 @@ color: var(--liting-color);
   line-height: 1.7142;
   color: var(--body-background-color);
 }
-.contacts-podval
+.contacts-upper
 {
   font-family: Roboto;
   font-style: normal;
